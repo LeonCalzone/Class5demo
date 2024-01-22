@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+            grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
+            gap: 10px; /* 10 pixels gap between rows and columns */
+            /* remember no commas on frs!!!!!! */
+        }
+
+        .grid-item {
+            display: flex; /* Use flexbox for centering */
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 1; /* Adjust line-height to eliminate extra spacing */
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>

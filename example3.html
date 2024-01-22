@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 2fr; /* Three equal columns */
+            grid-template-rows: 2fr 1fr 2fr; /* Three equal rows */
+            gap: 10px; /* 10 pixels gap between rows and columns */
+            height: 100dvh
+        }
+
+        .grid-item {
+            display: flex; /* Use flexbox for centering */
+            flex-direction: column; /* Align items vertically */
+            align-items: center; /* Center content vertically */
+            justify-content: center; /* Center content horizontally */
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            border: 2px solid #8300fd;
+            text-align: center;
+            line-height: 1; /* Adjust line-height to eliminate extra spacing */
+        }
+
+        .box {
+            align-items: flex-end;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center; /* Align text to the left horizontally within the box */
+            align-items: center; /* Center text vertically within the box */
+            font-size: 16px;
+            color: #db0000;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 1</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 2</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 3</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 4</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 5</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 6</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 7</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 8</span>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="box">
+                <span class="text">Text 9</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

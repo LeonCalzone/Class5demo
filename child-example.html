@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Child Selector Example</title>
+    <style>
+      .parent > p {
+        color: red;
+      }
+
+      /* In this example:
+
+We have a <div> element with the class "parent". Inside this parent, we have several <p> elements (paragraphs), which are the "children".
+The CSS file contains a child selector .parent > p. This selector targets all <p> elements that are direct children of an element with the class "parent".
+The style rule inside the child selector (color: red;) will apply only to the <p> elements that are direct children of .parent, making their text color red.
+Note that the <div> element inside the parent is not affected by this rule since it's not a <p> element.
+This setup will result in the text of the <p> elements turning red, while the text inside the <div> will remain unaffected, demonstrating how the child selector specifically targets direct children of a specified element. */
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <p>Child 1</p>
+      <p>Child 2</p>
+      <!-- This is not affected by the child selector -->
+      <div>Another element</div>
+      <p>Child 3</p>
+    </div>
+  </body>
+</html>

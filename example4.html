@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    height: 100vh;
+}
+
+/* Define class names for grid items and their expansion */
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 2px solid #8300fd;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Make specific items expand */
+.grid-item-a {
+    grid-column: span 6; /* Expands across two columns */
+    grid-row: span 1;    /* Occupies one row */
+    background-color: pink;
+}
+
+.grid-item-b {
+    grid-column: span 1; /* Occupies one column */
+    grid-row: span 4;    /* Expands across two rows */
+    background-color: green;
+}
+
+.grid-item-c {
+    grid-column: span 4; /* Expands across two columns */
+    grid-row: span 4;    /* Expands across two rows */
+    background-color: blue;
+}
+.grid-item-d {
+    grid-column: span 1; /* Expands across two columns */
+    grid-row: span 4;    /* Expands across two rows */
+    background-color: rgb(255, 0, 0);
+}
+.grid-item-e {
+    grid-column: span 6; /* Expands across two columns */
+    grid-row: span 1;    /* Occupies one row */
+    background-color: purple;
+}
+
+      
+
+        /* Define more class names for remaining grid items as needed */
+
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            border: 2px solid #8300fd;
+            text-align: center;
+            line-height: 1;
+        }
+
+        .box {
+            align-items: flex-end;
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #db0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Use the new class names for grid items -->
+        <div class="grid-item grid-item-a">
+            <div class="box">
+                <span class="text">Grid Item A</span>
+            </div>
+        </div>
+        <div class="grid-item grid-item-b">
+            <div class="box">
+                <span class="text">Grid Item B</span>
+            </div>
+        </div>
+        <div class="grid-item grid-item-c">
+            <div class="box">
+                <span class="text">Grid Item C</span>
+            </div>
+        </div>
+        <div class="grid-item grid-item-d">
+            <div class="box">
+                <span class="text">Grid Item D</span>
+            </div>
+        </div>
+        <div class="grid-item grid-item-e">
+            <div class="box">
+                <span class="text">Grid Item E</span>
+            </div>
+        </div>
+     
+      
+        <!-- Add more grid items with appropriate class names -->
+    </div>
+</body>
+</html>

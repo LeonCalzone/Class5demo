@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(
+          3,
+          1fr
+        ); /* Three equal columns and one larger column */
+        grid-template-rows: 2fr 1fr 2fr; /* Three equal rows */
+        gap: 10px; /* 10 pixels gap between rows and columns */
+        height: 100vh; /* Set the grid container height to 100% of viewport height */
+      }
+
+      .grid-item {
+        display: flex; /* Use flexbox for centering */
+        flex-direction: column; /* Align items vertically */
+        align-items: center; /* Center content vertically */
+        justify-content: center; /* Center content horizontally */
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        border: 2px solid #8300fd;
+        text-align: center;
+        line-height: 1; /* Adjust line-height to eliminate extra spacing */
+      }
+
+      .box {
+        align-items: flex-end;
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        display: flex;
+        justify-content: center; /* Align text to the left horizontally within the box */
+        align-items: center; /* Center text vertically within the box */
+        font-size: 16px;
+        color: #db0000;
+      }
+
+      /* Make specific grid items expand */
+      .grid-item:nth-child(2n) .box {
+        width: 150px;
+        height: 150px;
+        background-color: blue;
+      }
+
+      /* The :nth-child selector in CSS is used to select elements 
+      based on their position in a group of siblings. 
+      It allows you to apply styles to elements that are in specific positions. 
+      For example, :nth-child(2) targets the second child of its parent, :nth-child(3) the third, and so on. 
+      You can also use formulas like :nth-child(3n) to select every third element. 
+      This selector is highly useful for styling lists, tables, or any set of sibling elements in a patterned way, 
+      like alternating row colors in a table or highlighting every fourth item in a list. */
+      
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 1</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 2</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 3</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 4</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 5</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 6</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 7</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 8</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="box">
+          <span class="text">Text 9</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
