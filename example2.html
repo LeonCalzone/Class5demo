@@ -2,12 +2,18 @@
 <html>
 <head>
     <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
         .grid-container {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+            grid-template-columns: 1fr 2fr 1fr; /* Three equal columns */
             grid-template-rows: 1fr 1fr 1fr; /* Three equal rows */
             gap: 10px; /* 10 pixels gap between rows and columns */
             /* remember no commas on frs!!!!!! */
+            height: 100vh;
         }
 
         .grid-item {

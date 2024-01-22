@@ -12,6 +12,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows:  repeat(12, 1fr);  
     gap: 10px; /* Gap between grid items */
     padding: 10px;
     height: 100vh; /* Set the grid container height to 100% of viewport height */
@@ -25,6 +26,7 @@
 
 .scrollable-text-box {
     grid-column: span 2; /* Spanning across all columns for larger area */
+    grid-row:span 11;
     overflow-y: auto; /* Enables vertical scrolling */
 }
 
@@ -33,6 +35,19 @@
     line-height: 1.5;
     text-align: left;
 }
+.grid-item-a{
+    color:red;
+    grid-row:span 7; 
+}
+.grid-item-b{
+    color:blue;
+    grid-row:span 4; 
+}
+.grid-item-c{
+    color:green;
+    grid-column:span 2; 
+}
+
 </style>
 </head>
 <body>
@@ -63,9 +78,9 @@
         </div>
 
         <!-- Regular Grid Items -->
-        <div class="grid-item">Box 1</div>
-        <div class="grid-item">Box 2</div>
-        <div class="grid-item">Box 3</div>
+        <div class="grid-item grid-item-a" >grid item a</div>
+        <div class="grid-item grid-item-b">grid item B</div>
+        <div class="grid-item grid-item-c">grid item c</div>
         <div class="grid-item">Box 4</div>
         <!-- Add more boxes as needed -->
     </div>
